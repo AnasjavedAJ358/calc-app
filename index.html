@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div  class="calculator">
+    
+<div>
+    <input disabled  class="calc_input" type="text" id="inn">
+</div>
+<div id="left">
+    <div>
+        <button onclick="setValue('7')" class="btn">7</button>
+        <button onclick="setValue('8')" class="btn">8</button>
+        <button onclick="setValue('9')" class="btn">9</button>
+        <button onclick="setValue('/')" class="btn">/</button>
+    
+    </div> 
+    <div>
+        <button onclick="setValue('4')" class="btn">4</button>
+        <button onclick="setValue('5')" class="btn">5</button>
+        <button onclick="setValue('6')" class="btn">6</button>
+        <button onclick="setValue('*')" class="btn">x</button>
+    
+    </div> 
+<div>
+    <button onclick="setValue('1')" class="btn">1</button>
+    <button onclick="setValue('2')" class="btn">2</button>
+    <button onclick="setValue('3')" class="btn">3</button>
+    <button onclick="setValue('-')" class="btn">-</button>
+
+</div>
+
+
+<div>
+    <button onclick="setValue('.')" class="btn">.</button>
+    <button onclick="setValue('0')" class="btn">0</button>
+    
+    <button onclick="setValue('+')" class="btn">+</button>
+    <button id="clear" onclick="Empty()" class="btn">C</button>
+
+</div> 
+</div>
+<div >
+    <button id="equal" onclick="answer()" class="btn">=</button>
+</div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
